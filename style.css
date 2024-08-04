@@ -7,6 +7,9 @@ body{
     background-color: hsl(0, 0%, 20%);
     color: aliceblue;
 }
+.info-clouds h1 {
+    font-size: 30px
+}
 .main{
     background-color: rgb(97, 126, 126);
     width: 90%;

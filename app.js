@@ -1,6 +1,6 @@
 const cityName = document.querySelector(".search input");
 const searchButton = document.querySelector(".search button");
-const nameOfCity = document.querySelector(".info-clouds h2");
+const nameOfCity = document.querySelector(".info-clouds h1");
 const weatherIcon = document.querySelector(".icon");
 const tempInfo = document.querySelector(".tempInfo");
 
@@ -39,6 +39,9 @@ async function checkWeather(cityName) {
                                 weatherIcon.src = "images/mist.png"
                                 tempInfo.innerHTML = 'Mist';
                             }
+                            else {
+                                tempInfo.innerHTML = 'Undtermind';
+                            }
 
     
 
@@ -47,8 +50,9 @@ async function checkWeather(cityName) {
 
 }
 searchButton.addEventListener("click", ()=>{
-   
+
     checkWeather(cityName.value);
+    cityName.value = " ";
    
 
 })
